@@ -29,17 +29,18 @@ def on_button_click():
 window = tk.Tk()
 window.title('Reverse Words and Check Letters')
 
-input_label = tk.Label(window, text='Enter a string:')
-input_label.pack()
+input_label = tk.Label(window, text='ENTER A STRING:')
+input_label.pack(padx=20, pady=20)
 
 entry = tk.Entry(window, width=50)
-entry.pack()
+entry.pack(padx=20, pady=20)
 
 button = tk.Button(window, text='Reverse Words and Check Letters', command=on_button_click)
-button.pack()
+button.pack(padx=20, pady=20)
 
 result_text = tk.StringVar()
 result_label = tk.Label(window, textvariable=result_text)
 result_label.pack()
 
+window.geometry("600x400")
 window.mainloop()
