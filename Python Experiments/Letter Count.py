@@ -24,13 +24,14 @@ root.title("Even Letter 'a' and Odd Letter 'b' Checker")
 
 # Create input box and button
 entry = tk.Entry(root)
-entry.pack()
+entry.pack(padx=20, pady=20)
 button = tk.Button(root, text="Check", command=check_string)
-button.pack()
+button.pack(padx=20, pady=20)
 
 # Create output label
 output = tk.Label(root, text="")
 output.pack()
 
 # Start GUI
+root.geometry("600x400")
 root.mainloop()
